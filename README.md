@@ -10,11 +10,11 @@
     * OneToMany, ManyToMany, ManyToOne;
     * Como persistir entidades com relacionamentos bidirecionais.
 * Usar o EntityManager para integração com banco de dados.
+* Consultas:
+  * Agregação, named queries, select new
+  * Lazy, Eager e Join Fetch
 
 **Ainda será estudado:**
-* Consultas:
-   * Agregação, named queries, select new
-   * Lazy, Eager e Join Fetch
 * Criteria API
 * Herança, chave composta, etc.
 
