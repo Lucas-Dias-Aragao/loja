@@ -8,11 +8,12 @@ import br.com.alura.loja.util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.List;
 
 public class CadastroDeProduto {
     public static void main(String[] args) {
-        //cadastrarProduto();
+        cadastrarProduto();
         EntityManager em = JPAUtil.getEntityManager();
         ProdutoDAO produtoDAO = new ProdutoDAO(em);
 
@@ -21,6 +22,9 @@ public class CadastroDeProduto {
 
         BigDecimal precoDoProduto = produtoDAO.buscarPrecoDoProdutoComNome("Macbook");
         System.out.println("preco do produto: "+ precoDoProduto);
+
+        //teste com Criteria
+        produtoDAO.buscarPorParametrosComCriteria(null,null, LocalDate.now());
 
     }
 
