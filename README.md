@@ -13,9 +13,9 @@
 * Consultas:
   * Agregação, named queries, select new
   * Lazy, Eager e Join Fetch
-
-**Ainda será estudado:**
-* Criteria API
-* Herança, chave composta, etc.
+* Criteria API;
+* Embeddable e Embedded;
+* Mapeamento de Herança;
+* Mapeamento de chave composta.
 
 
